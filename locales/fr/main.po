@@ -1,0 +1,24 @@
+# -------------------------------------
+# French translation of mrvbSidebar
+# © Mirovinben (http://www.mirovinben.fr/)
+# -------------------------------------
+msgid ""
+msgstr ""
+
+msgid "Mrvb: sidebar / block #1"
+msgstr "Mrvb : sidebar / bloc n°1"
+
+msgid "opening block"
+msgstr "bloc ouvrant"
+
+msgid "Mrvb: sidebar / block #2"
+msgstr "Mrvb : sidebar / bloc n°2"
+
+msgid "closing block + opening block"
+msgstr "bloc fermant + bloc ouvrant"
+
+msgid "Mrvb: sidebar / block #3"
+msgstr "Mrvb : sidebar / bloc n°3"
+
+msgid "closing block"
+msgstr "bloc fermant"

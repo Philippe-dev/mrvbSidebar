@@ -1,0 +1,22 @@
+# -- BEGIN LICENSE BLOCK ----------------------------------
+#
+# This file is part of mrvbSidebar, a plugin for Dotclear 2
+#
+# © Mirovinben (http://www.mirovinben.fr/)
+# Licensed under the GPL version 2.0 license.
+# See LICENSE file or
+# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+#
+# -- END LICENSE BLOCK ------------------------------------
+
+mrvbOpenBlock : 
+	classe CSS "mrvbBlock" + une classe personnalisée facultative,
+	ouvre un bloc <div> pour regrouper les widgets qui suivent.
+
+mrvbCloseBlock : 
+	ferme le bloc ouvert précédemment par mrvbOpenBlock avec un </div>.
+
+mrvbInterBlocks : 
+	mrvbCloseBlock + mrvbOpenBlock.
+
+Remarque concernant l'utilisation de mrvbOpenBlock et de mrvbCloseBlock : il est impératif d'avoir autant de mrvbOpenBlock que de mrvbCloseBlock et dans cet ordre...
