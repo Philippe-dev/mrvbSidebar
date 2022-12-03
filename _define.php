@@ -16,7 +16,7 @@ if (!defined('DC_RC_PATH')) {
 $this->registerModule(
     'mrvbSidebar',
     'customization of sidebar',
-    'Mirovinben',
+    'Mirovinben and contributors',
     '1.0',
     [
         'requires'    => [['core', '2.24']],
