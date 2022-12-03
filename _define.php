@@ -1,26 +1,28 @@
 <?php
-# -- BEGIN LICENSE BLOCK ----------------------------------
-#
-# This file is part of mrvbSidebar, a plugin for Dotclear 2
-#
-# © Mirovinben (http://www.mirovinben.fr/)
-# Licensed under the GPL version 2.0 license.
-# See LICENSE file or
-# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-#
-# -- END LICENSE BLOCK ------------------------------------
-
-if (!defined('DC_RC_PATH')) { return; }
+/**
+ * @brief mrvbSidebar, a plugin for Dotclear 2
+ *
+ * @package Dotclear
+ * @subpackage Plugins
+ *
+ * @author Mirovinben (https://www.mirovinben.fr/)
+ *
+ * @copyright GPL-2.0 [https://www.gnu.org/licenses/gpl-2.0.html]
+ */
+if (!defined('DC_RC_PATH')) {
+    return;
+}
 
 $this->registerModule(
-	/* Name        */	"mrvbSidebar",
-	/* Description */	"customization of sidebar",
-	/* Author      */	"Mirovinben",
-	/* Version     */	'0.0.5',
-	/* Properties  */	array(
-							'permissions' => 'usage,contentadmin',
-							'type'        => 'plugin',
-							'support'     => 'http://www.mirovinben.fr/blog/index.php?post/id1532',
-							'details'     => 'http://plugins.dotaddict.org/dc2/details/mrvbSidebar'
-						)
+    'mrvbSidebar',
+    'customization of sidebar',
+    'Mirovinben',
+    '1.0',
+    [
+        'requires'    => [['core', '2.24']],
+        'permissions' => dcCore::app()->auth->makePermissions([dcAuth::PERMISSION_CONTENT_ADMIN]),
+        'type'        => 'plugin',
+        'support'     => 'https://www.mirovinben.fr/blog/index.php?post/id1532',
+        'details'     => 'https://plugins.dotaddict.org/dc2/details/mrvbSidebar',
+    ]
 );
